@@ -1,0 +1,37 @@
+{
+  "name": "@emmveqz/util-twilio",
+  "version": "1.0.0",
+  "description": "Util Twilio",
+  "main": "dist/Utils.js",
+  "types": "dist/Utils.d.ts",
+  "scripts": {
+    "build": "npx tsc --build ./tsconfig.json ",
+    "clean-js": "rm -f ./src/*.js",
+    "prepack": "npm run clean-js   &&   npm run build",
+    "dummy": "test"
+  },
+  "author": "Emmanuel Velazquez Lopez",
+  "license": "ISC",
+  "homepage": "https://github.com/emmveqz/util-twilio#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/emmveqz/util-twilio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emmveqz/util-twilio/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bundledDependencies": [
+  ],
+  "dependencies": {
+    "@emmveqz/util-tools-common": "^1.0.0",
+    "@types/node": "^12.7.3",
+    "twilio": "^4.13.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.4"
+  }
+}
